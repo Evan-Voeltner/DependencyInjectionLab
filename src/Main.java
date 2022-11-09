@@ -1,9 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        Weapon sword = new Weapon("Sword", 50);
-        Weapon club = new Weapon("Club", 30);
-        Robot robot_one = new Robot(club);
-        System.out.println(robot_one.name);
+        Lightsaber lightsaber = new Lightsaber();
+        Club club = new Club();
+        Sword sword = new Sword();
+
+
+        Robot robot_one = new Robot("Robby",lightsaber);
+        Robot robot_two = new Robot("Robert",club);
+        Robot robot_three = new Robot("Roberto",sword);
+
         robot_one.Attack();
+        robot_two.Attack();
+        robot_three.Attack();
     }
 }
